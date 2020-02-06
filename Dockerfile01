@@ -17,4 +17,3 @@ ENV POSTGRES_PASSWORD admin
 
 # /docker-entrypoint-initdb.d
 COPY initdb/test.sql .
-RUN psql -h db -d test -U admin -W admin -f test.sql
