@@ -15,6 +15,12 @@ services:
       context: .
       dockerfile: Dockerfile01
     image: maytham/postgres
+    environment:
+      - POSTGRES_DB=test
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=admin
+    port:
+      - 5432:5432
     networks:
       - potato
     restart: unless-stopped
