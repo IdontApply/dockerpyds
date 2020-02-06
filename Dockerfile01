@@ -15,5 +15,5 @@ ENV POSTGRES_DB test
 ENV POSTGRES_USER admin
 ENV POSTGRES_PASSWORD admin
 
- /docker-entrypoint-initdb.d
+# /docker-entrypoint-initdb.d
 COPY initdb/test.sql .
