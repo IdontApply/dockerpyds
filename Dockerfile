@@ -23,12 +23,12 @@ RUN pip install --upgrade pip
 
 
 
-RUN mkdir -p work/config
+#RUN mkdir -p work/config
 WORKDIR /work
 RUN mkdir ./packages
 RUN pip install --upgrade pip
 RUN pip install git+git://github.com/IdontApply/muAlchemy
 RUN git clone https://github.com/IdontApply/muscraper -b development
 RUN pip install -r ./muscraper/requirements.txt
-COPY ./config/dbconfig.yaml /config/
+COPY ./config ./muscraper/
 #RUN git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
