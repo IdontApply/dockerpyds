@@ -30,6 +30,6 @@ RUN pip install --upgrade pip
 RUN pip install git+git://github.com/IdontApply/muAlchemy
 RUN git clone https://github.com/IdontApply/muscraper -b development
 RUN pip install -r ./muscraper/requirements.txt
-RUN mkdir -p work/muscraper/config
+RUN mkdir -p ./muscraper/config
 COPY ./config ./muscraper/config/
 #RUN git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
