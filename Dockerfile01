@@ -14,4 +14,4 @@ ENV LC_ALL en_US.UTF-8
 
 
 # /docker-entrypoint-initdb.d
-COPY initdb/test.sql .
+COPY initdb/eco.sql .
