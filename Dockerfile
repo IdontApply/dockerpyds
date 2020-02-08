@@ -34,3 +34,4 @@ RUN mkdir -p ./muscraper/config
 COPY ./config ./muscraper/config/
 RUN chmod a+x ./muscraper/webdriver/chromedriver
 #RUN git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+ENV PATH "$PATH:/work/muscraper/webdriver/chromedriver"
